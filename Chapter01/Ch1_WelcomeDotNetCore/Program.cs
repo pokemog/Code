@@ -6,7 +6,7 @@ namespace Ch1_WelcomeDotNetCore
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine("Hello C#!");
+            System.Console.WriteLine("Welcome, .NET Core!");
         }
     }
 }
