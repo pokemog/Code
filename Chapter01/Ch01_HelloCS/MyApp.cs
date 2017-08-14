@@ -1,10 +1,7 @@
-class
-MyApp
+class MyApp
 {
-    static void
-    Main() {System. Console.    WriteLine(
-        "Hello C#!"
-    
-    )
-    ;}
+    static void Main()
+    {
+        System.Console.WriteLine("Hello C#!");
+    }
 }
