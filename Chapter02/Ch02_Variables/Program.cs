@@ -26,6 +26,12 @@ namespace Ch02_Variables
             Console.WriteLine($"{default(int)}"); // 0
             Console.WriteLine($"{default(bool)}"); // False
             Console.WriteLine($"{default(DateTime)}"); // 1/01/0001 00:00:00
+
+            int iCanNotBeNull = 4;
+            int? iCanBeNull = null;
+            Console.WriteLine(iCanBeNull.GetValueOrDefault());
+            iCanBeNull = 4;
+            Console.WriteLine(iCanBeNull.GetValueOrDefault());
         }
     }
 }
