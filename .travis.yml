@@ -5,3 +5,6 @@ dist: trusty
 script:
   - dotnet restore ./Chapter01/Chapter01.sln
   - dotnet restore ./Chapter02/Chapter02.sln
+
+  - xbuild /p:Configuration=Release ./Chapter01/Chapter01.sln
+  - xbuild /p:configuration=Release ./Chapter02/Chapter02.sln
