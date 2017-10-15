@@ -1,4 +1,8 @@
 language: csharp
+solution:
+  - ./Chapter01/Chapter01.sln
+  - ./Chapter02/Chapter02.sln
+
 mono: none
 dotnet: 2.0.0
 dist: trusty
