@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Xml;
 using static System.Console;
 
 namespace Ch02_Variables
@@ -20,12 +22,30 @@ namespace Ch02_Variables
             int length = anotherName.Length;
 
             // Inferring the type of a local variable
+            //int population = 66_000_000; // 66 million in UK
+            //double weight = 1.88; // in kilograms
+            //decimal price = 4.99M; // in pounds sterling
+            //string fruit = "Apples"; // strings use double-quotes
+            //char letter = 'Z'; //chars use single-quotes
+            //bool happy = true; // Booleans have value of true or false
+
             var population = 66_000_000; // 66 million in UK
             var weight = 1.88; // in kilograms
             var price = 4.99M; // in pounds sterling
             var fruit = "Apples"; // strings use double-quotes
             var letter = 'Z'; //chars use single-quotes
             var happy = true; // Booleans have value of true or false
+
+            // Good Practice
+            // Good use of var
+            var xml1 = new XmlDocument();
+            // unnecessarily verbose repeating XmlDocument
+            XmlDocument xml2 = new XmlDocument();
+
+            // bad use of var; what data type is file1?
+            var file1 = File.CreateText(@".\something.txt");
+            // good use of a specific type declaration
+            StreamWriter file2 = File.CreateText(@".\someting.txt");
 
             // Displaying output to the user
             Console.WriteLine($"The UK population is {population}.");
@@ -44,7 +64,7 @@ namespace Ch02_Variables
             WriteLine(iCanBeNull.GetValueOrDefault());
 
             // Checking for null
-            // Check is myVariable is not null before using it
+            // Check if myVariable is not null before using it
             if (iCanBeNull != null)
             {
                 WriteLine($"{nameof(iCanBeNull)} is not null");
@@ -69,9 +89,16 @@ namespace Ch02_Variables
             WriteLine($"The length of {nameof(names)} variable is: {names.Length}");
             for (int i = 0; i < names.Length; i++)
             {
-                // read the itemat this index
+                // read the item at this index
                 WriteLine(names[i]);
             }
+
+            // Getting input from the user
+            Console.Write("Type your first name and press ENTER: ");
+            string firstName = Console.ReadLine();
+            Console.Write("Type your age and press ENTER: ");
+            string age = Console.ReadLine();
+            Console.WriteLine($"Hello {firstName}, you look good for {age}.");
         }
     }
 }
