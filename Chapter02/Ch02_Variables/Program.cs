@@ -45,7 +45,7 @@ namespace Ch02_Variables
             // bad use of var; what data type is file1?
             var file1 = File.CreateText(@".\something.txt");
             // good use of a specific type declaration
-            StreamWriter file2 = File.CreateText(@".\someting.txt");
+            StreamWriter file2 = File.CreateText(@".\something.txt");
 
             // Displaying output to the user
             Console.WriteLine($"The UK population is {population}.");
