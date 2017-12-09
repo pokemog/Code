@@ -20,8 +20,8 @@ namespace Ch02_Variables
 
             //Storing whole numbers
             int decimalNotation = 2_000_000; // 2 million
-            int binaryNotation = 0b_0001_1110_1000_0100_1000_0000; // 2 million
-            int hexdecimalNotation = 0x_001E_8480;  // 2 million
+            int binaryNotation = 0b0001_1110_1000_0100_1000_0000; // 2 million
+            int hexdecimalNotation = 0x001E_8480;  // 2 million
 
             // The object type
             object height = 1.88; // storing a double in an object
