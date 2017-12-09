@@ -9,6 +9,20 @@ namespace Ch02_Variables
     {
         static void Main(string[] args)
         {
+            //Literal values
+            //Storing text
+            char letter = 'A';
+            //string name = "Bob";
+
+            // Storing numbers
+            int myIntegerNumber = 23;
+            double myRealNumber = 2.3;
+
+            //Storing whole numbers
+            int decimalNotation = 2_000_000; // 2 million
+            int binaryNotation = 0b_0001_1110_1000_0100_1000_0000; // 2 million
+            int hexdecimalNotation = 0x_001E_8480;  // 2 million
+
             // The object type
             object height = 1.88; // storing a double in an object
             object name = "Amir"; // storing a string in an object
