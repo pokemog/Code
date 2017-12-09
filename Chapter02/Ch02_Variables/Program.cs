@@ -47,7 +47,7 @@ namespace Ch02_Variables
             var weight = 1.88; // in kilograms
             var price = 4.99M; // in pounds sterling
             var fruit = "Apples"; // strings use double-quotes
-            var letter = 'Z'; //chars use single-quotes
+            var letter2 = 'Z'; //chars use single-quotes
             var happy = true; // Booleans have value of true or false
 
             // Good Practice
