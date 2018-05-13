@@ -57,10 +57,27 @@ namespace Ch02_Variables
             XmlDocument xml2 = new XmlDocument();
 
             // bad use of var; what data type is file1?
-            var file1 = File.CreateText(@".\something.txt");
+            try
+            {
+                var file1 = File.CreateText(@".\something.txt");
+            }
+            catch (System.IO.IOException)
+            {
+                WriteLine($"File is in use");
+                throw;
+            }
+            
             // good use of a specific type declaration
-            StreamWriter file2 = File.CreateText(@".\something.txt");
-
+            try
+            {
+                StreamWriter file2 = File.CreateText(@".\something.txt");
+            }
+            catch (System.IO.IOException)
+            {
+                WriteLine($"File is in use");
+                throw;
+            }
+            
             // Displaying output to the user
             Console.WriteLine($"The UK population is {population}.");
             Console.WriteLine($"The UK population is {population:N0}. ");
