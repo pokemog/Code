@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Ch1_WelcomeDotNetCore
+﻿namespace Ch01_WelcomeDotNetCore
 {
     class Program
     {

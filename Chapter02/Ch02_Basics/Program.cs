@@ -14,6 +14,7 @@ namespace Ch02_Basics
 
             Console.WriteLine("Hello World!");
 
+            // Counting types and methods
             // loop through the assemblies that this application references
             foreach (var r in Assembly.GetEntryAssembly().GetReferencedAssemblies())
             {
@@ -32,6 +33,7 @@ namespace Ch02_Basics
                     $"with {methodCount:N0} methods in {r.Name} assembly.");
             }
 
+            // Naming variables
             // Let the height variable become equal to the value 1.88
             double heightInMetres = 1_000_123.88;
             Console.WriteLine($"The variable {nameof(heightInMetres)} has value {heightInMetres}.");
