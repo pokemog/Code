@@ -72,7 +72,7 @@ namespace Ch03_SelectionStatements
 
             // Pattern matching with the switch statement
             // string path = "/Users/markjprice/Code/Chapter03"; // macOS
-            string path = @"C:\Projects\Cod\Chapter03"; // Windows
+            string path = @"C:\Projects\Code\Chapter03"; // Windows
 
             Stream s = File.Open(Path.Combine(path, "file.txt"), FileMode.OpenOrCreate);
 
